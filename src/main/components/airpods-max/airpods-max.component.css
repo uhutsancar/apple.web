@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-auto {
+  width: auto;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.content {
+  height: 100%;
+  background: #f5f5f7;
+  width: 100%;
+  display: block;
+}
+
+.d-flex {
+  display: flex;
+  align-items: end;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.title h3 {
+  line-height: 3.2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.showcase {
+  position: relative;
+}
+
+.showcase-container {
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.showcase-left {
+  width: 60%;
+  padding: 0 1rem;
+}
+
+.showcase-right {
+  width: 60%;
+  padding: 0 1rem;
+}
+
+.carousel-indicator {
+  display: flex;
+}
+
+.carousel-indicator__button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.carousel-indicator--active {
+  outline: 1px solid #d2d2d7;
+  outline-offset: 0.25rem;
+}
+
+.pink {
+  background: #e4544d;
+}
+
+.grey {
+  background-color: #3c3d3a;
+}
+
+.blue {
+  background: #2f506c;
+}
+
+.silver {
+  background: #f5f4f0;
+}
+
+.green {
+  background: #e7ece3;
+}
+
+.carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  box-sizing: content-box;
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
+
+.preview-image {
+  height: 100%;
+  display: grid;
+}
+
+.preview-image__items {
+  grid-area: 1/1/ 2/-1;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+}
+
+.preview-image__items img {
+  display: block;
+  margin: 0 auto;
+}
+
+.preview-image__items.preview-image--active {
+  opacity: 1;
+  z-index: 1;
+}

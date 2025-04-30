@@ -1,0 +1,199 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap'); */
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", system-ui;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+/* element styles */
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+/************************/
+/* custom classes ******/
+
+.font-white {
+	color: #f5f5f7;
+}
+
+.font-black {
+	color: #1d1d1f;
+}
+
+.flex {
+	display: flex;
+}
+
+.space-around {
+	justify-content: space-around;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.align-end {
+	align-items: flex-end;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.content-max-width {
+	max-width: 1024px;
+}
+
+.pt-24 {
+	padding-top: 24px;
+}
+
+.pb-6 {
+	padding-bottom: 6px;
+}
+
+.pt-48 {
+	padding-top: 48px;
+}
+
+.mt-30 {
+	margin-top: 30px;
+}
+
+.mt-44 {
+	margin-top: 44px;
+}
+
+/******** Main Nav ********/
+.nav-container {
+	width: 100%;
+	height: 44px;
+	background-color: rgba(22, 22, 23, .8);
+	backdrop-filter: saturate(180%) blur(20px);
+	position: fixed;
+	z-index:99;
+}
+
+.nav-content {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1024px;
+	box-sizing: border-box;
+}
+
+.nav-links a {
+	color: rgba(255, 255, 255, .8);
+	max-width: 1011px;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1;
+	letter-spacing: -0.01em;
+	padding: 0px 18px;
+}
+
+.logo-span {
+	color: rgba(255, 255, 255, .8);
+}
+
+.nav-links a:hover {
+	color: #FFFFFF;
+}
+
+svg:hover {
+	stroke: #FFFFFF;
+	fill: #FFFFFF;
+}
+
+.top-nav-background {
+	background: black;
+	height: 44px;
+}
+
+
+
+/* Global classes */
+
+.apple-ultra-logo-wrapper {
+	padding-top: 56px;
+	margin-bottom: 5px;
+}
+
+
+.cta-links-large {
+	margin-bottom: 46px;
+}
+
+.cta-links-small {
+	margin-top: 18px;
+}
+
+.airpods-4-cta-links {
+	margin-bottom: 70px;
+}
+
+/*** Ribbon Section *****/
+
+.ribbon {
+	background-color: #1d1d1f;
+}
+
+.ribbon-asterisk {
+	font-size: .6em;
+	text-decoration: underline;
+	text-underline-offset: -0.18em;
+	font-weight: 300;
+}
+
+.ribbon-copy {
+	/*   max-width: 460px; */
+	font-size: 14px;
+	font-weight: 300;
+	padding: 12px 0px;
+}
+
+
+.ribbon-links {
+	color: #2997ff;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.ribbon-links:hover {
+	text-decoration: underline;
+}
+
+.chevron {
+	text-decoration: none;
+}
