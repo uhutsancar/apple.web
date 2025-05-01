@@ -3031,17 +3031,18 @@ html.enhance-xp .overview-images {
   width: 100%;
 }
 .headline {
-  font-size: 72px;
+  font-size: 35px;
   line-height: 1;
   font-weight: 600;
   letter-spacing: -0.012em;
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
   margin: 50px auto 0;
+  text-align:center;
 }
 @media only screen and (max-width: 1068px) {
   .headline {
-    font-size: 56px;
+    font-size: 26px;
     line-height: 1.0714285714;
     font-weight: 600;
     letter-spacing: -0.005em;
@@ -3051,7 +3052,7 @@ html.enhance-xp .overview-images {
 }
 @media only screen and (max-width: 734px) {
   .headline {
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0em;
@@ -3065,19 +3066,19 @@ html.enhance-xp .overview-images {
   }
 }
 .subhead {
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.125;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.004em;
   font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
   margin: 20px auto 0;
+  text-align:center;
 }
 @media only screen and (max-width: 1068px) {
   .subhead {
-    font-size: 28px;
+    font-size: 25px;
     line-height: 1.1428571429;
-    font-weight: 600;
     letter-spacing: 0.007em;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
       sans-serif;
@@ -3087,7 +3088,6 @@ html.enhance-xp .overview-images {
   .subhead {
     font-size: 19px;
     line-height: 1.2105263158;
-    font-weight: 600;
     letter-spacing: 0.012em;
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
       sans-serif;
@@ -3660,3 +3660,121 @@ html.enhance-xp .overview-images {
     opacity: 1;
   }
 }
+
+
+
+
+.Macbook-content {
+  background: url("https://www.apple.com/v/home/bm/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_large_2x.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 650px;
+  padding-top: 40px;
+  width: 100%;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.college-content {
+  padding-top: 110px;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  height: 590px;
+  width: calc(50% - 10px);
+}
+
+.college-content .headline {
+  margin-top: 100px;
+  top: 300px;
+}
+
+.college-content .subhead {
+  max-width: 220px;
+  padding-bottom: 13px;
+  font-size: 17px;
+  margin-bottom: 300px;
+  top: 300px;
+}
+
+.college-content .button {
+  bottom: 450px;
+}
+
+
+.unit-wrapper {
+  position: relative;
+  display: grid;
+  flex-direction: column;
+}
+
+
+
+.light {
+  color: rgb(255, 255, 255);
+}
+
+.button {
+  font-weight: 400;
+  border-style: solid;
+  border-width: 1px;
+  min-width: 28px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-radius: 980px;
+
+}
+
+.primary {
+  color: white;
+  border: none;
+  background-color: rgb(0, 113, 227);
+}
+
+.secondary {
+  background-color: rgb(0, 0, 0, 0);
+  border-color: rgb(41, 151, 255);
+  color: rgb(41, 151, 255);
+}
+
+.secondary:hover {
+  background-color: rgb(0, 113, 227);
+  color: white;
+}
+
+.unit-image-wrapper {
+  margin:0 auto;
+}
+
+.cta-links {
+  color: rgb(245, 245, 247);
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 18px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-links a {
+  margin-left: 13px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 11px;
+}
+
+
+
+
+/* Scroll ile animasyon için fade-in */
+.animate-fade-in {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .animate-fade-in.show {
+	opacity: 1;
+	transform: translateY(0);
+  }
