@@ -73,47 +73,26 @@ export class AirpordsComponent implements AfterViewInit {
       this.setupBulletClicks();
     }
 
-
-
-    
-
     const target = this.el.nativeElement.querySelector('#airpodsContainer');
-   
 
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.renderer.addClass(target, 'show');
-          observer.unobserve(entry.target); // sadece 1 kere tetiklensin
-
-          
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            this.renderer.addClass(target, 'show');
+            observer.unobserve(entry.target); // sadece 1 kere tetiklensin
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
 
     if (target) {
       observer.observe(target);
     }
-
-
-
-
-
-
-
-
-
-
-
   }
-
-
-
-
-
-
 
   //airpods
   private currentFrame(index: number): string {
