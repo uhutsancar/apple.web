@@ -22,7 +22,7 @@ export class IphoneComponent implements OnInit, AfterViewInit {
         }
       });
     }, {
-      threshold: 0.1
+      threshold: 0.3
     });
 
     if (target) {
