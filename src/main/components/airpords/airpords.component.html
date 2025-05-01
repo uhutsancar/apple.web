@@ -17,22 +17,120 @@
 
  -->
 
-
- <body class="scroll-event" >
+<body class="scroll-event">
   <canvas #scrollCanvas id="scroll-effect"></canvas>
- </body>
+</body>
 
+<section
+  class="section section-airpods animate-fade-in"
+  id="airpodsContainer"
+  data-analytics-section-engagement="name:airpods"
+  data-component-list="airpods"
+  data-anim-scroll-group="airpods"
+>
+  <div class="section-content">
+    <div class="bg-container">
+      <picture
+        id="overview-airpods-airpod-l-1"
+        class="overview-airpods-airpod-l overview-images loaded"
+        (load)="(true)"
+        data-picture-loaded=""
+        style="transform: matrix(1, 0, 0, 1, 0, 0)"
+      >
+        <source
+          srcset="
+            https://www.apple.com/v/home/hi/images/overview/airpods/airpod_l__ds9by5sdnnsm_large.png
+          "
+          media="(max-width:1068px)"
+        />
+        <source srcset="" media="(min-width:0px)" />
+        <img
+          src="https://www.apple.com/v/home/hi/images/overview/airpods/airpod_l__ds9by5sdnnsm_large.png"
+          alt=""
+        />
+      </picture>
 
+      <picture
+        id="overview-airpods-airpod-r-1"
+        class="overview-airpods-airpod-r overview-images loaded"
+        data-lazy-load="true"
+        data-picture-loaded=""
+        style="transform: matrix(1, 0, 0, 1, 0, 0)"
+      >
+        <source
+          srcset="
+            /v/home/hi/images/overview/airpods/airpod_r__bu486rpepuly_medium.png,
+            /v/home/hi/images/overview/airpods/airpod_r__bu486rpepuly_medium_2x.png 2x
+          "
+          media="(max-width:1068px)"
+        />
+        <source
+          srcset="
+            /v/home/hi/images/overview/airpods/airpod_r__bu486rpepuly_large.png,
+            /v/home/hi/images/overview/airpods/airpod_r__bu486rpepuly_large_2x.png 2x
+          "
+          media="(min-width:0px)"
+        />
+        <img
+          src="https://www.apple.com/v/home/hi/images/overview/airpods/airpod_r__bu486rpepuly_large.png"
+          alt=""
+        />
+      </picture>
 
+      <picture
+        id="overview-airpods-airpods-1"
+        class="overview-airpods-airpods overview-images loaded"
+        data-lazy-load="true"
+        data-picture-loaded=""
+      >
+        <source
+          srcset="
+            /v/home/hi/images/overview/airpods/airpods__f01dil4hdquu_small.png,
+            /v/home/hi/images/overview/airpods/airpods__f01dil4hdquu_small_2x.png 2x
+          "
+          media="(min-width:0px)"
+        />
+        <img
+          src="https://www.apple.com/v/home/hi/images/overview/airpods/airpods__f01dil4hdquu_small.png"
+          alt=""
+        />
+      </picture>
+    </div>
+    <div class="copy-container">
+      <h2 class="headline">AirPods</h2>
+      <h3 class="subhead" role="presentation">
+        Uzamsal ses, Adaptif EQ, daha&nbsp;uzun pil&nbsp;ömrü, tere ve suya
+        dayanıklılık. <br class="large" />Tümü yepyeni bir tasarımda.
+      </h3>
+      <div class="cta-links">
+        <a
+          class="button control"
+          routerLinkActive="router-link-active"
+          href="/tr/airpods-3rd-generation/"
+          target="_self"
+          data-analytics-title="learn more about airpods"
+          aria-label="AirPods hakkında daha fazla bilgi edinin"
+          >Daha Fazla Bilgi</a
+        >
+        <a
+          class="button control"
+          href="/tr/shop/goto/product/MME73"
+          target="_self"
+          data-analytics-title="view pricing | airpods"
+          aria-label="AirPods fiyatlarını görüntüleyin"
+          >Fiyatları Görüntüleyin</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
 
-
-
- <section style="margin-top: 100px;">
+<section style="margin-top: 100px">
   <div class="showcase">
     <div class="container">
       <div class="d-flex mb-2">
         <div class="title">
-          <h3>Five colors.<br>Anything but<br>monotone.</h3>
+          <h3>Five colors.<br />Anything but<br />monotone.</h3>
         </div>
         <div class="carousel-indicator">
           <div #carouselBullet class="carousel-indicator__button silver"></div>
@@ -51,19 +149,39 @@
         <div class="carousel height-100">
           <div class="carousel-wrapper" #carouselWrapper>
             <div #carouselItem class="carousel-item">
-              <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_silver_front__g8c839jaldqy_medium.jpg" class="height-100 width-auto object-fit-contain" alt="">
+              <img
+                src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_silver_front__g8c839jaldqy_medium.jpg"
+                class="height-100 width-auto object-fit-contain"
+                alt=""
+              />
             </div>
             <div #carouselItem class="carousel-item">
-              <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_pink_front__dbqafvrvcy6a_medium.jpg" class="height-100 width-auto object-fit-contain" alt="">
+              <img
+                src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_pink_front__dbqafvrvcy6a_medium.jpg"
+                class="height-100 width-auto object-fit-contain"
+                alt=""
+              />
             </div>
             <div #carouselItem class="carousel-item">
-              <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_gray_front__bgkzj4cnbafm_medium.jpg" class="height-100 width-auto object-fit-contain" alt="">
+              <img
+                src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_gray_front__bgkzj4cnbafm_medium.jpg"
+                class="height-100 width-auto object-fit-contain"
+                alt=""
+              />
             </div>
             <div #carouselItem class="carousel-item">
-              <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_blue_front__ddfias5frxqq_medium.jpg" class="height-100 width-auto object-fit-contain" alt="">
+              <img
+                src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_blue_front__ddfias5frxqq_medium.jpg"
+                class="height-100 width-auto object-fit-contain"
+                alt=""
+              />
             </div>
             <div #carouselItem class="carousel-item">
-              <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_green_front__cqpeugza9as2_medium.jpg" class="height-100 width-auto object-fit-contain" alt="">
+              <img
+                src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_green_front__cqpeugza9as2_medium.jpg"
+                class="height-100 width-auto object-fit-contain"
+                alt=""
+              />
             </div>
           </div>
         </div>
@@ -74,24 +192,33 @@
       <div class="content">
         <div class="preview-image">
           <div #previewImage class="preview-image__items">
-            <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_silver_side__ff3nerq51ka6_medium.jpg" alt="">
+            <img
+              src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_silver_side__ff3nerq51ka6_medium.jpg"
+              alt=""
+            />
           </div>
           <div #previewImage class="preview-image__items">
-            <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_pink_side__gd261969pcmu_medium.jpg">
+            <img
+              src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_pink_side__gd261969pcmu_medium.jpg"
+            />
           </div>
           <div #previewImage class="preview-image__items">
-            <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_gray_side__gbjen9i2hram_medium.jpg">
+            <img
+              src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_gray_side__gbjen9i2hram_medium.jpg"
+            />
           </div>
           <div #previewImage class="preview-image__items">
-            <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_blue_side__e166rgbg1s02_medium.jpg">
+            <img
+              src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_blue_side__e166rgbg1s02_medium.jpg"
+            />
           </div>
           <div #previewImage class="preview-image__items">
-            <img src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_green_side__dpusuw9jg30i_medium.jpg">
+            <img
+              src="https://www.apple.com/v/airpods-max/e/images/overview/design_colors_green_side__dpusuw9jg30i_medium.jpg"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-

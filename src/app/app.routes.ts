@@ -21,4 +21,14 @@ export const routes: Routes = [
     loadComponent: () => import('../main/components/airpods-max/airpods-max.component').then(m => m.AirpodsMaxComponent)
 
   },
+
+  {
+    path: 'mac',
+    loadComponent: () => import('../main/components/mac/mac.component').then(m => m.MacComponent)
+
+  },
+
+
+
+  { path: '**', redirectTo: '' }             
 ];

@@ -34,7 +34,7 @@ export class AirpordsComponent implements AfterViewInit {
   activeIndex: number = 0;
   translateVal: number = 0;
 
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private el: ElementRef) {}
 
   ngAfterViewInit(): void {
     const canvas = this.canvasRef.nativeElement;
@@ -72,7 +72,48 @@ export class AirpordsComponent implements AfterViewInit {
       this.init();
       this.setupBulletClicks();
     }
+
+
+
+    
+
+    const target = this.el.nativeElement.querySelector('#airpodsContainer');
+   
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.renderer.addClass(target, 'show');
+          observer.unobserve(entry.target); // sadece 1 kere tetiklensin
+
+          
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    if (target) {
+      observer.observe(target);
+    }
+
+
+
+
+
+
+
+
+
+
+
   }
+
+
+
+
+
+
 
   //airpods
   private currentFrame(index: number): string {

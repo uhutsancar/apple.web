@@ -388,7 +388,7 @@ li {
 
 
 
-/* Scroll ile animasyon için fade-in örneği */
+/* Scroll ile animasyon için fade-in */
 .animate-fade-in {
 	opacity: 0;
 	transform: translateY(50px);
