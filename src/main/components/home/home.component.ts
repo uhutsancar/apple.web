@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           this.renderer.addClass(target, 'show');
-          observer.unobserve(entry.target); // sadece 1 kere tetiklensin
+          observer.unobserve(entry.target); 
         }
       });
     }, {

@@ -10,25 +10,21 @@ import { SeoService } from '../../services/seo/seo.service';
   styleUrls: ['./mac.component.css'],
 })
 export class MacComponent implements OnInit {
-  constructor(private renderer: Renderer2, private el: ElementRef, 
-    private _seoService: SeoService) {}
+  constructor(
+    private renderer: Renderer2,
+    private el: ElementRef,
+    private _seoService: SeoService
+  ) {}
 
   ngOnInit() {
     this._seoService.updateSeoTags({
       title: 'Mac ',
-      description: 'Şimdiye kadarki en güçlü Mac laptoplar ve masaüstü bilgisayarlar. Süper güçlü Apple çip. MacBook Air, MacBook Pro, iMac, Mac mini ve Mac Studio.',
+      description:
+        'Şimdiye kadarki en güçlü Mac laptoplar ve masaüstü bilgisayarlar. Süper güçlü Apple çip. MacBook Air, MacBook Pro, iMac, Mac mini ve Mac Studio.',
       image: '',
-      pageLink: ''
-    })
-
-
-
-
-
+      pageLink: '',
+    });
   }
-
-
-
 
   ngAfterViewInit(): void {
     const target = this.el.nativeElement.querySelector('#macbookContainer');

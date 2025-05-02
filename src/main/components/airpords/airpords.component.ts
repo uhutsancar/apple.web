@@ -76,13 +76,13 @@ export class AirpordsComponent implements AfterViewInit {
 
     // airpods-max
 
-    // QueryList tamamen yüklendiğinde init ve click kurulumunu yap
+  
     this.carouselBullets.changes.subscribe(() => {
       this.init();
       this.setupBulletClicks();
     });
 
-    // Eğer bileşen hemen yüklenmişse changes tetiklenmeden de başlat
+
     if (this.carouselBullets.length > 0) {
       this.init();
       this.setupBulletClicks();
@@ -128,7 +128,7 @@ export class AirpordsComponent implements AfterViewInit {
     const items = this.carouselItemList.toArray();
     const previews = this.previewImages.toArray();
 
-    // Başlangıçta aktif olan öğeleri ayarla
+
     bullets[this.activeIndex]?.nativeElement.classList.add(
       'carousel-indicator--active'
     );
@@ -141,7 +141,7 @@ export class AirpordsComponent implements AfterViewInit {
   }
 
   private setupBulletClicks(): void {
-    // Her bir carousel bullet'ine click event listener'ı ekle
+    
     this.carouselBullets.forEach((bullet, index) => {
       this.renderer.listen(bullet.nativeElement, 'click', () => {
         this.changeSlide(index);
@@ -157,7 +157,7 @@ export class AirpordsComponent implements AfterViewInit {
     const previews = this.previewImages.toArray();
     const wrapper = this.carouselWrapper.first?.nativeElement;
 
-    // Eğer mevcut active index'lerde eleman yoksa, işlemi sonlandır
+
     if (
       !bullets[this.activeIndex] ||
       !items[this.activeIndex] ||
@@ -165,7 +165,7 @@ export class AirpordsComponent implements AfterViewInit {
     )
       return;
 
-    // Eski aktif olan elementlerin class'larını kaldır
+
     bullets[this.activeIndex].nativeElement.classList.remove(
       'carousel-indicator--active'
     );
@@ -176,17 +176,16 @@ export class AirpordsComponent implements AfterViewInit {
       'preview-image--active'
     );
 
-    // Yeni seçilen index'e ait class'ları ekle
+
     bullets[index].nativeElement.classList.add('carousel-indicator--active');
     items[index].nativeElement.classList.add('carousel-item--active');
     previews[index].nativeElement.classList.add('preview-image--active');
 
-    // Carousel'i hareket ettir
     if (wrapper) {
       wrapper.style.transform = `translateX(${this.translateVal}%)`;
     }
 
-    // Aktif index'i güncelle
+
     this.activeIndex = index;
   }
 }
