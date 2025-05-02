@@ -399,3 +399,11 @@ li {
 	opacity: 1;
 	transform: translateY(0);
   }
+
+
+  @media screen and (max-width: 769px) {
+	.grid-container{
+		flex-direction: column;
+        display: flex;
+	}
+  }

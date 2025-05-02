@@ -318,7 +318,6 @@
     
     }
   }
-  
 
 
 
@@ -333,4 +332,24 @@
   .animate-fade-in.show {
 	opacity: 1;
 	transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+  @media screen and (max-width: 500px) {
+    main {
+      min-width: 100% !important;
+    }
+  
   }

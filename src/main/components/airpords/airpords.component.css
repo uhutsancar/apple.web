@@ -669,3 +669,32 @@ a:disabled{
 	opacity: 1;
 	transform: translateY(0);
   }
+
+
+  @media screen and (max-width: 769px) {
+    .title h3 {
+      line-height: 1.5rem;
+      font-size: 20px;
+  }
+    .showcase-left {
+      width: 100%;
+      padding: 0 1rem;
+  }
+    .showcase-right {
+      width: 100%;
+      padding: 0 1rem;
+  }
+  .showcase-container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.carousel-indicator__button[_ngcontent-ng-c559008323] {
+  width: 25px;
+  height: 25px;
+
+}
+}
