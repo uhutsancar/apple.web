@@ -7,6 +7,7 @@ import {
   QueryList,
   ViewChildren,
 } from '@angular/core';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-airpords',
@@ -34,7 +35,21 @@ export class AirpordsComponent implements AfterViewInit {
   activeIndex: number = 0;
   translateVal: number = 0;
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, 
+    private el: ElementRef,
+    private _seoService: SeoService
+  ) {}
+
+  ngOnInit(): void {
+
+    this._seoService.updateSeoTags({
+      title: 'Airpods',
+      description: 'AirPods, hızlı ve kolay kurulumdan yüksek ses kalitesine kadar tüm özellikleriyle olağanüstü bir kablosuz kulaklık deneyimi sunuyor. Üstelik ücretsiz lazer baskı seçeneğiyle.',
+      image: '',
+      pageLink: ''
+    })
+
+  }
 
   ngAfterViewInit(): void {
     const canvas = this.canvasRef.nativeElement;

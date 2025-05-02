@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,18 @@ import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, 
+    private el: ElementRef,
+    private _seoService: SeoService
+  ) {}
 
   ngOnInit() {
+    this._seoService.updateSeoTags({
+      title: 'Apple',
+      description: 'Apple’ın yeniliklerle dolu dünyasını keşfedin ve iPhone, iPad, Apple Watch, Mac ve Apple TV satın alın. Ayrıca aksesuarlara ve eğlence dünyasına göz atın, uzman desteği hakkında bilgi alın.',
+      image: '',
+      pageLink: ''
+    })
   }
 
 

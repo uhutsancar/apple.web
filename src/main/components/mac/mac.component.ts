@@ -1,5 +1,6 @@
 import { Component, ElementRef, OnInit, Renderer2 } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-mac',
@@ -9,9 +10,25 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./mac.component.css'],
 })
 export class MacComponent implements OnInit {
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, private el: ElementRef, 
+    private _seoService: SeoService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this._seoService.updateSeoTags({
+      title: 'Mac ',
+      description: 'Şimdiye kadarki en güçlü Mac laptoplar ve masaüstü bilgisayarlar. Süper güçlü Apple çip. MacBook Air, MacBook Pro, iMac, Mac mini ve Mac Studio.',
+      image: '',
+      pageLink: ''
+    })
+
+
+
+
+
+  }
+
+
+
 
   ngAfterViewInit(): void {
     const target = this.el.nativeElement.querySelector('#macbookContainer');

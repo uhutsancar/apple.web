@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, Renderer2, ElementRef } from '@angular/core';
+import { SeoService } from '../../services/seo/seo.service';
 
 @Component({
   selector: 'app-iphone',
@@ -7,9 +8,21 @@ import { Component, OnInit, AfterViewInit, Renderer2, ElementRef } from '@angula
 })
 export class IphoneComponent implements OnInit, AfterViewInit {
 
-  constructor(private renderer: Renderer2, private el: ElementRef) {}
+  constructor(private renderer: Renderer2, 
+    private el: ElementRef,
+    private _seoService: SeoService
+     
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this._seoService.updateSeoTags({
+      title: 'İphone',
+      description: 'Yeni iPhone 16 Pro, iPhone 16 Pro Max, iPhone 16 ve iPhone 16 Plus’ı keşfedin. Apple Intelligence için tasarlandılar.',
+      image: '',
+      pageLink: ''
+    })
+
+  }
 
   ngAfterViewInit(): void {
     const target = this.el.nativeElement.querySelector('#gridContainer');
