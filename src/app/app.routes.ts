@@ -7,6 +7,11 @@ export const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'auth',
+    loadChildren: () => import('../main/components/login/auth-routes')
+
+  },
+  {
     path: 'iphone',
     loadComponent: () => import('../main/components/iphone/iphone.component').then(m => m.IphoneComponent)
 
@@ -30,5 +35,8 @@ export const routes: Routes = [
 
 
 
-  { path: '**', redirectTo: '' }             
+  { path: '**', 
+    redirectTo: ''
+  
+  }             
 ];

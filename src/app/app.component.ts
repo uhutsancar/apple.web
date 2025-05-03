@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../main/layout/header/header.component';
 import { FooterComponent } from "../main/layout/footer/footer.component";
 import { filter } from 'rxjs';
 import { CookieConsentComponent } from "../main/layout/cookie-consent/cookie-consent";
+
 
 @Component({
     selector: 'app-root',
@@ -19,6 +20,8 @@ import { CookieConsentComponent } from "../main/layout/cookie-consent/cookie-con
 })
 export class AppComponent {
   title = 'apple.web';
+
+  // authService = inject(AuthService);
 
   constructor(private router: Router) {
     this.router.events

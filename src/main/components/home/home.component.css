@@ -1,355 +1,332 @@
 * {
-    font-family: "Open Sans", sans-serif;
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-  }
-  
-  
+  font-family: "Open Sans", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
-  ul {
-    height: 100%;
-  }
+ul {
+  height: 100%;
+}
 
-  
-  main {
-    min-width: 600px;
-    max-width: 2560px;
-    margin: 0 auto;
-    background-color: #ffffff;
-  }
-  
-  .my-chevron {
-    width: 18px;
-    position: relative;
-    top: 3px;
-  }
-  .sm-chevron {
-    width: 15px;
-    position: relative;
-    top: 3px;
-  }
-  
-  .image-container1 .headline {
-    color: white;
-    font-size: 56px;
-    margin-bottom: 12px;
-  }
-  
-  .image-container1 .subhead {
-    font-weight: normal;
-    color: white;
-    font-size: 28px;
-    margin-bottom: 12px;
-  }
-  
-  .links {
-    font-size: 20px;
-    color: #2997ff;
-    text-decoration: none;
-    margin-top: 8px;
-    padding-right:20px;
-  }
-  .links svg {
-    width:25px;
-    position: relative;
-    top: 5px;
-  } 
-  .sm-links {
-    font-size: 16px;
-  }
-  .links:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    transition: 0.3s ease 0s;
-  }
-  .image-container1 {
-    background: url("https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg")
-      no-repeat center center;
-    background-size: cover;
-    height: 706px;
-    margin-bottom: 12px;
-  }
-  .image-container1:hover {
-    cursor: pointer;
-    transition: 0.3s ease 0s;
-  }
-  .image-container1 .text {
-    position: relative;
-    top: 50px;
-  }
-  
-  .image-container2 {
-    background: url(https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg)
-      no-repeat center center;
-    background-size: cover;
-    height: 706px;
-    margin-bottom: 12px;
-  }
-  .image-container2:hover {
-    cursor: pointer;
-    transition: 0.3s ease 0s;
-  }
-  .image-container2 .text {
-    position: relative;
-    top: 50px;
-  }
-  .image-container2 .headline {
-    color: black;
-    font-size: 56px;
-    margin-bottom: 12px;
-  }
-  
-  .image-container2 .subhead {
-    color: black;
-    font-weight: normal;
-    font-size: 28px;
-    margin-bottom: 12px;
-  }
-  
-  .image-container3 {
-    background: url(https://www.apple.com/v/home/be/images/heroes/apple-watch-series-9/hero_apple_watch_series_9_order__d0fi9mb84dci_largetall.jpg)
-      no-repeat center center;
-    background-size: cover;
-    height: 706px;
-    margin-bottom: 12px;
-  }
-  
-  .image-container3:hover {
-    cursor: pointer;
-    transition: 0.3s ease 0s;
-  }
-  .image-container3 .text {
-    position: relative;
-    top: 50px;
-  }
-  .image-container3 .headline {
-    color: white;
-    font-size: 56px;
-    margin-bottom: 12px;
-  }
-  .image-container3 .headline2 {
-    color: #cf1718;
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  .image-container3 .subhead {
-    color: white;
-    font-weight: normal;
-    font-size: 28px;
-    margin-bottom: 12px;
-  }
-  
-  .appleevent-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/apple-event-october/promo_apple_event_october__cv09aychoioi_large.jpg)
-      no-repeat center center;
-  }
-  
-  .visionpro-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/apple-vision-pro/promo_apple_vision_pro__f4v4zp0sum2y_large.jpg)
-      no-repeat center center;
-  }
-  .ipad-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg)
-      no-repeat center center;
-  }
-  .pay-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/apple-pay-later/promo_apple_pay_later__dmxuv1vfmwwi_large.jpg)
-      no-repeat center center;
-  }
-  .tradein-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg)
-      no-repeat center center;
-  }
-  .card-module {
-    background: url(https://www.apple.com/v/home/be/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg)
-      no-repeat center center;
-  }
-  
-  .soccer-module {
-    background: url(https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/6e/6d/e8/6e6de8fa-0335-caf3-c7fa-90f95ab58851/59f2d5e8-6500-4cd9-9df4-c632cc7b9283.png/400x610tc.webp)
-      no-repeat center center;
-  }
-  .tvshow-module {
-    background: url(https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/15/66/33/156633a0-7b85-992a-27fd-0684236c34da/61dbe57f-cbf6-4aba-ba2b-2c3a200de8a2.png/400x610tc.webp)
-      no-repeat center center;
-  }
-  .music-module {
-    background: url(https://www.apple.com/v/apple-music/y/images/overview/listen_and_discover__b0tsym1ura6a_large.jpg)
-      no-repeat center center;
-  }
-  
+main {
+  min-width: 600px;
+  max-width: 2560px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+
+.my-chevron {
+  width: 18px;
+  position: relative;
+  top: 3px;
+}
+.sm-chevron {
+  width: 15px;
+  position: relative;
+  top: 3px;
+}
+
+.image-container1 .headline {
+  color: white;
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.image-container1 .subhead {
+  font-weight: normal;
+  color: white;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.links {
+  font-size: 20px;
+  color: #2997ff;
+  text-decoration: none;
+  margin-top: 8px;
+  padding-right: 20px;
+}
+.links svg {
+  width: 25px;
+  position: relative;
+  top: 5px;
+}
+.sm-links {
+  font-size: 16px;
+}
+.links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.image-container1 {
+  background: url("https://www.apple.com/v/home/be/images/heroes/iphone-15-pro/hero_iphone15pro__i70z9oz3hj2i_largetall.jpg")
+    no-repeat center center;
+  background-size: cover;
+  height: 706px;
+  margin-bottom: 12px;
+}
+.image-container1:hover {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.image-container1 .text {
+  position: relative;
+  top: 50px;
+}
+
+.image-container2 {
+  background: url(https://www.apple.com/v/home/be/images/heroes/iphone-15/hero_iphone15_announce__uuemlcwczn6u_largetall.jpg)
+    no-repeat center center;
+  background-size: cover;
+  height: 706px;
+  margin-bottom: 12px;
+}
+.image-container2:hover {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.image-container2 .text {
+  position: relative;
+  top: 50px;
+}
+.image-container2 .headline {
+  color: black;
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+
+.image-container2 .subhead {
+  color: black;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.image-container3 {
+  background: url(https://www.apple.com/v/home/be/images/heroes/apple-watch-series-9/hero_apple_watch_series_9_order__d0fi9mb84dci_largetall.jpg)
+    no-repeat center center;
+  background-size: cover;
+  height: 706px;
+  margin-bottom: 12px;
+}
+
+.image-container3:hover {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.image-container3 .text {
+  position: relative;
+  top: 50px;
+}
+.image-container3 .headline {
+  color: white;
+  font-size: 56px;
+  margin-bottom: 12px;
+}
+.image-container3 .headline2 {
+  color: #cf1718;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.image-container3 .subhead {
+  color: white;
+  font-weight: normal;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.appleevent-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/apple-event-october/promo_apple_event_october__cv09aychoioi_large.jpg)
+    no-repeat center center;
+}
+
+.visionpro-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/apple-vision-pro/promo_apple_vision_pro__f4v4zp0sum2y_large.jpg)
+    no-repeat center center;
+}
+.ipad-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg)
+    no-repeat center center;
+}
+.pay-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/apple-pay-later/promo_apple_pay_later__dmxuv1vfmwwi_large.jpg)
+    no-repeat center center;
+}
+.tradein-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg)
+    no-repeat center center;
+}
+.card-module {
+  background: url(https://www.apple.com/v/home/be/images/promos/apple-card/tile__cauwwcyyn9hy_large.jpg)
+    no-repeat center center;
+}
+
+.soccer-module {
+  background: url(https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/6e/6d/e8/6e6de8fa-0335-caf3-c7fa-90f95ab58851/59f2d5e8-6500-4cd9-9df4-c632cc7b9283.png/400x610tc.webp)
+    no-repeat center center;
+}
+.tvshow-module {
+  background: url(https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/15/66/33/156633a0-7b85-992a-27fd-0684236c34da/61dbe57f-cbf6-4aba-ba2b-2c3a200de8a2.png/400x610tc.webp)
+    no-repeat center center;
+}
+.music-module {
+  background: url(https://www.apple.com/v/apple-music/y/images/overview/listen_and_discover__b0tsym1ura6a_large.jpg)
+    no-repeat center center;
+}
+
+.image-container4 {
+  background-size: cover;
+  height: 624px;
+  margin: 6px;
+  width: calc(50% - 12px);
+}
+.pad-6 {
+  padding: 6px;
+}
+
+.image-container4:hover {
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.image-container4 .text {
+  position: relative;
+  top: 50px;
+}
+
+.image-container4 .headline {
+  color: black;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.image-container4 .subhead {
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.appleevent-module .text,
+.visionpro-module .text {
+  position: relative;
+  top: 450px;
+}
+
+.appleevent-module .headline {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.appleevent-module .subhead {
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.visionpro-module .subhead2 {
+  color: #6e6e73;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.carousel-module {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel {
+  background-size: cover;
+  height: 624px;
+  margin-bottom: 12px;
+}
+.width-25 {
+  width: calc(25% - 12px);
+}
+.width-50 {
+  width: calc(50% - 12px);
+}
+
+.flex {
+  display: flex;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+
+.center {
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.border-r {
+  border-right: 1px solid #86868b;
+  padding-right: 8px;
+  margin-right: 8px;
+}
+
+.svg-logo {
+  height: 50px;
+  fill: white;
+  position: relative;
+  bottom: 8px;
+  margin-right: 8px;
+}
+.text-center {
+  text-align: center;
+}
+.dark-theme {
+  fill: #231f20;
+  height: 32px;
+  margin-right: 4px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+.mr-20 {
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 760px) {
   .image-container4 {
-    background-size: cover;
-    height: 624px;
-    margin: 6px;
-     width: calc(50% - 12px);
-  
+    width: calc(100% - 12px);
   }
-  .pad-6
-  {
-    padding: 6px;
-  }
-  
-  .image-container4:hover {
-    cursor: pointer;
-    transition: 0.3s ease 0s;
-  }
-  .image-container4 .text {
-    position: relative;
-    top: 50px;
-  }
-  
-  .image-container4 .headline {
-    color: black;
-    font-size: 36px;
-    margin-bottom: 12px;
-  }
-  
-  .image-container4 .subhead {
-    color: black;
-    font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  
-  .appleevent-module .text,
-  .visionpro-module .text {
-    position: relative;
-    top: 450px;
-  }
-  
-  .appleevent-module .headline {
-    color: white;
-    font-size: 36px;
-    margin-bottom: 12px;
-  }
-  
-  .appleevent-module .subhead {
-    color: white;
-    font-weight: normal;
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  
-  .visionpro-module .subhead2 {
-    color: #6e6e73;
-    font-size: 18px;
-    margin-bottom: 12px;
-  }
-  
-  .carousel-module{
-    display: flex;
-    justify-content: space-between;
-  }
-  .carousel {
-    background-size: cover;
-    height: 624px;
-    margin-bottom: 12px;
+}
 
-  }
-  .width-25 {
-    width: calc(25% - 12px);
-  }
-  .width-50 {
-    width: calc(50% - 12px);
-  }
-
-  .flex {
-    display: flex;
-  }
-  .wrap {
-    flex-wrap: wrap;
-  }
-  .column {
-    flex-direction: column;
-  }
-  
-  .align-center {
-    align-items: center;
-  }
-  .space-between {
-    justify-content: space-between;
-  }
-  
-  .center {
-    justify-content: center;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  .mb-20 {
-    margin-bottom: 20px;
-  }
-  
-  .border-r {
-    border-right: 1px solid #86868b;
-    padding-right: 8px;
-    margin-right: 8px;
-  }
-  
-  .svg-logo {
-    height: 50px;
-    fill: white;
-    position: relative;
-    bottom: 8px;
-    margin-right: 8px;
-  }
-  .text-center {
-    text-align: center;
-  }
-  .dark-theme {
-    fill: #231f20;
-    height: 32px;
-    margin-right: 4px;
-  }
-  
-  .mt-50 {
-    margin-top: 50px;
-  }
-  .mr-20 {
-    margin-right: 30px;
-  }
-  
-  @media screen and (max-width: 760px) {
-    .image-container4 {
-      width: calc(100% - 12px);
-    
-    }
-  }
-
-
-
-  
 /* Scroll ile animasyon için fade-in örneği */
 .animate-fade-in {
-	opacity: 0;
-	transform: translateY(50px);
-	transition: opacity 1s ease-out, transform 1s ease-out;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    min-width: 100% !important;
   }
-  
-  .animate-fade-in.show {
-	opacity: 1;
-	transform: translateY(0);
-  }
+}
 
-
-
-
-
-
-
-
-
-
-  
-  
-
-
-  @media screen and (max-width: 500px) {
-    main {
-      min-width: 100% !important;
-    }
-  
-  }
