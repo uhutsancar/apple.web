@@ -6,9 +6,11 @@ import {
   provideHttpClient,
   withInterceptors,
 } from '@angular/common/http';
-import { API_URL } from './data-access/base-api';
+
 import { environment } from '../environments/environment';
-import { pathInterceptor } from './interceptors/path-interceptors';
+import { pathInterceptor } from '../main/interceptors/path-interceptors';
+import { API_URL } from '../main/data-access/base-api';
+
 
 export const appConfig: ApplicationConfig = {
   providers: [

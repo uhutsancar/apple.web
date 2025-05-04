@@ -1,9 +1,10 @@
 import { Component, inject, model, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthApi } from '../../../app/data-access/auth-api';
+
 import { AuthService } from './auth.service';
 import { Router } from '@angular/router';
 import { SeoService } from '../../services/seo/seo.service';
+import { AuthApi } from '../../data-access/auth-api';
 
 @Component({
   selector: 'app-login',

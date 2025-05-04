@@ -2,7 +2,8 @@ import { ActivatedRouteSnapshot, RouterStateSnapshot, Routes } from '@angular/ro
 import { HomeComponent } from '../main/components/home/home.component';
 import { AuthService } from '../main/components/login/auth.service';
 import { inject } from '@angular/core';
-import { authGuard } from './guards/auth.guard';
+import { authGuard } from '../main/guards/auth.guard';
+
 
 export const routes: Routes = [
   {

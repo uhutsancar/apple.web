@@ -1,6 +1,8 @@
 import { HttpHandlerFn, HttpRequest } from '@angular/common/http';
-import { API_URL } from '../data-access/base-api';
+
 import { inject } from '@angular/core';
+import { API_URL } from '../data-access/base-api';
+
 
 export const pathInterceptor = (
   req: HttpRequest<unknown>,

@@ -1,5 +1,6 @@
 import { computed, Injectable, signal } from '@angular/core';
-import { User } from '../../../app/data-access/models/base-api.types';
+import { User } from '../../data-access/models/base-api.types';
+
 
 @Injectable({
   providedIn: 'root',
