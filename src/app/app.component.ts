@@ -20,9 +20,6 @@ import { CookieConsentComponent } from "../main/layout/cookie-consent/cookie-con
 })
 export class AppComponent {
   title = 'apple.web';
-
-  // authService = inject(AuthService);
-
   constructor(private router: Router) {
     this.router.events
       .pipe(filter(event => event instanceof NavigationEnd))
