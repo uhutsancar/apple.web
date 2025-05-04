@@ -1,5 +1,8 @@
-import { Routes } from '@angular/router';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, Routes } from '@angular/router';
 import { HomeComponent } from '../main/components/home/home.component';
+import { AuthService } from '../main/components/login/auth.service';
+import { inject } from '@angular/core';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
   {
@@ -33,10 +36,18 @@ export const routes: Routes = [
 
   },
 
+  {
+    path: 'account',
+    loadComponent: () => import('../main/components/account/account.component').then(m => m.AccountComponent),
+  canMatch: [authGuard]
+  },
 
 
-  { path: '**', 
-    redirectTo: ''
+
+  { 
+    path: '**', 
+    redirectTo: 'auth/login',
+    pathMatch: 'full'
   
   }             
 ];

@@ -1,19 +1,14 @@
-import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
+import {  inject, Injectable } from '@angular/core';
 import { User } from './models/base-api.types';
-
-export class BaseApi {
-  baseUrl = environment.apiUrl;
-  http = inject(HttpClient);
-}
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
 })
-export class AuthApi extends BaseApi {
+export class AuthApi {
+  http = inject(HttpClient);
   login(username: string, password: string) {
-    return this.http.post<User>(`${this.baseUrl}/auth/login`, {
+    return this.http.post<User>(`auth/login`, {
       username,
       password,
     });
