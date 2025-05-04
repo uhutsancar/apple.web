@@ -41,7 +41,6 @@ export class AirpordsComponent implements AfterViewInit {
   ) {}
 
   ngOnInit(): void {
-
     this._seoService.updateSeoTags({
       title: 'Airpods',
       description: 'AirPods, hızlı ve kolay kurulumdan yüksek ses kalitesine kadar tüm özellikleriyle olağanüstü bir kablosuz kulaklık deneyimi sunuyor. Üstelik ücretsiz lazer baskı seçeneğiyle.',
@@ -74,14 +73,12 @@ export class AirpordsComponent implements AfterViewInit {
       requestAnimationFrame(() => this.updateImage(frameIndex + 1));
     });
 
-    // airpods-max
 
-  
+    // airpods-max
     this.carouselBullets.changes.subscribe(() => {
       this.init();
       this.setupBulletClicks();
     });
-
 
     if (this.carouselBullets.length > 0) {
       this.init();
@@ -89,7 +86,6 @@ export class AirpordsComponent implements AfterViewInit {
     }
 
     const target = this.el.nativeElement.querySelector('#airpodsContainer');
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -103,12 +99,12 @@ export class AirpordsComponent implements AfterViewInit {
         threshold: 0.1,
       }
     );
-
     if (target) {
       observer.observe(target);
     }
   }
 
+  
   //airpods
   private currentFrame(index: number): string {
     return `${this.url}${index.toString().padStart(4, '0')}.jpg`;

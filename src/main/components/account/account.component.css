@@ -35,8 +35,8 @@
   .divider {
     height: 1px;
     background-color: #d2d2d7;
-    margin-top: 12px;
-    margin-bottom: 36px;
+    max-width: 900px;
+    margin: 12px auto 36px;
   }
 
   .greeting {
@@ -60,6 +60,88 @@
 
     margin: 0 auto;
     width: 100%;
-    max-width: 1000px;
-    margin-bottom: 300px;
+    max-width: 900px;
+ 
   }
+
+
+
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+.phone-card {
+    background-color: #e6e6e6; /* Card background color */
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    overflow: hidden; /* Ensures image stays within card boundaries */
+}
+.phone-image {
+    background: url('https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pink-select-2021?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1629842709000') no-repeat center;
+    background-size: cover; /* Ensures image covers the card completely */
+    background-color: #e6e6e6; /* Matches card background to avoid white space */
+    width: 200px;
+    height: 400px;
+    margin: 0;
+}
+.phone-text {
+    margin-top: 20px;
+    color: #333333;
+}
+.phone-text p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+.phone-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+.phone-text a:hover {
+    text-decoration: underline;
+}
+.footer-text {
+  color: #1d1d1f;
+  font-size: 18px;
+  width: 100%;
+  max-width: 900px;
+  margin: 30px auto 50px;
+  font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 1.4705882353;
+}
+.footer-text a {
+    color: #007bff;
+    text-decoration: none;
+}
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+.phone-text .brand {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 5px;
+  }
+  .phone-text .model {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    
+    }
